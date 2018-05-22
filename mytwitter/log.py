@@ -10,6 +10,7 @@ def get_logger():
 
 
 def configure_logging():
+    print("configuring logging.")
     log_level = logging.DEBUG if CONF.log.debug else logging.INFO
     formatter = logging.Formatter(CONF.log.log_format)
 
